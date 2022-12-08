@@ -1,3 +1,50 @@
+<a name="3.0.9"></a>
+## 3.0.9 (2022-12-08)
+
+
+### Bug Fixes
+
+* **all:** added required parameters to certain cordova.exec functions ([69fe4e6](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/69fe4e6))
+* **android:** background colors & change plugin name ([aa0f9dd](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/aa0f9dd))
+* **android:** fixes the enableLight and disableLight methods ([21add2f](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/21add2f))
+* **android:** Remove cordova-plugin-compat android dependency ([85e2396](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/85e2396))
+* **browser:** make cancelScan call the current scan's callback with error code 6 ([d5ca673](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/d5ca673))
+* **ios:** correct video preview orientation handling on iOS ([141edbb](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/141edbb)), closes [#50](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/50) [#7](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/7)
+* **ios:** fix openSettings on iOS 10.0 ([#43](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/43)) ([aaa098c](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/aaa098c))
+* **ios:** Make NSCameraUsageDescription string non-empty, which is now rejected by Apple ([514a2d2](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/514a2d2))
+* **ios:** pause scanning with pausePreview method on iOS ([c0722c7](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/c0722c7)), closes [#12](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/12)
+* **ios:** prevents iOS plugin from crashing when destroy is called without a callback ([610a004](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/610a004)), closes [#142](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/142)
+* **ios,android:** set background to transparent rather than white ([c9531b8](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/c9531b8)), closes [#135](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/135)
+* **js:** added requred args param to cordova.exec calls ([99050d6](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/99050d6))
+* **jshint:** make jshint pass ([2d95c10](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/2d95c10))
+* **library:** fixes an issue with optional callbacks being required ([99dc348](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/99dc348)), closes [#32](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/32)
+* **library:** rename UMD library file in dist ([a4b385f](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/a4b385f))
+* **package:** add `main` property to package ([955e375](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/955e375)), closes [#83](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/83)
+* **package:** remove install script ([b769bec](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/b769bec))
+* **package:** Use upstream swift support plugin ([211597c](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/211597c))
+* **syntax:** Swift 5 ([692c126](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/692c126))
+* **tag:** removes invalid tag UseSwiftLanguageVersion ([3c368fe](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/3c368fe))
+* **windows:** prevent memory leaks when destroying, add rd file ([1a4843a](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/1a4843a))
+
+
+### Features
+
+* **all:** Add build process, release browser platform as a UMD library ([052b8d3](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/052b8d3)), closes [#30](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/30)
+* **android:** add QRScanner class and majority of its methods ([7e589ef](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/7e589ef))
+* **android:** android platform release preparation ([2d60614](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/2d60614))
+* **android:** complete initial android release ([4afa02e](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/4afa02e))
+* **browser:** add browser to plugin.xml ([ac91b82](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/ac91b82))
+* **browser:** initial release of browser platform ([2288539](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/2288539))
+* **browser:** upgrade qrcode-reader to ^1.0.4 ([08cf523](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/08cf523)), closes [#92](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/issues/92)
+* **ios:** remove need for the swift-support hook, remove script ([dca1f7e](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/dca1f7e))
+* **ios:** Support iOS 10 beta ([fa7ef5b](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/fa7ef5b))
+* **ios:** support older iPods (without a back camera) ([f211f90](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/f211f90))
+* **ios:** Upgrade, convert syntax to Swift 3.1 ([27fdd92](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/27fdd92))
+* **windows:** add support for windows phone 8.1 ([3efa2df](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/3efa2df))
+* **windows:** target windows 10 universal ([691cdda](https://github.com/JaimeHere/cordova-plugin-qrscanner-12/commit/691cdda))
+
+
+
 <a name="3.0.8"></a>
 ## 3.0.8 (2022-12-07)
 
