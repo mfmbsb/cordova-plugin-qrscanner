@@ -1,6 +1,6 @@
 repositories {
     jcenter()
-    google()
+    mavenCentral()
     flatDir{
         dirs 'libs'
     }
@@ -10,20 +10,7 @@ dependencies {
     //implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
     implementation (name:'zxing-android-embedded-release', ext:'aar')
     implementation 'com.android.support:appcompat-v7:23.1.0'
-}
-
-subprojects {
-    repositories {
-        google()
-        mavenLocal()
-        mavenCentral()
-    }
-
-    version = '4.3.0'
-    group = 'com.journeyapps'
-
-    ext.androidTargetSdk = 30
-    ext.zxingCore = 'com.google.zxing:core:3.4.1'
+    implementation 'com.google.zxing:core:3.4.1'
 }
 
 android {
