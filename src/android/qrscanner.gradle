@@ -12,6 +12,20 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:23.1.0'
 }
 
+subprojects {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+    }
+
+    version = '4.3.0'
+    group = 'com.journeyapps'
+
+    ext.androidTargetSdk = 30
+    ext.zxingCore = 'com.google.zxing:core:3.4.1'
+}
+
 android {
     buildToolsVersion '23.0.2' // Older versions may give compile errors
 }
